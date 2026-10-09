@@ -1,0 +1,691 @@
+/* ==============================
+
+        CONFIGURAÇÕES GERAIS*
+
+*   ============================== */*
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* MENU */
+
+nav {
+    background-color: #70274F;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 8px 15px;
+}
+
+
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #AABE65;
+}
+
+/* LOGO */
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 120px;
+    height: auto;
+}
+
+/* BOTÕES */
+
+button {
+    background-color: #993661;
+    color: #FFFFFF;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #98AD42;
+    color: #000000;
+}
+
+/* HOME */
+
+#Home {
+    background-image: url('./acaip.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    min-height: 650px;
+    padding: 160px 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-conteudo {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+#Home h1 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#Home h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#Home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* SEÇÕES */
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* SOBRE NÓS */
+
+#Sobre {
+    background-color: #FFFFFF;
+}
+
+#Sobre p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+}
+
+#Sobre img {
+    width: 350px;
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 5px solid #70274F;
+}
+
+/* MULTIMÍDIA */
+
+.sobre-multimidia {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 3px solid #AABE65;
+}
+
+.sobre-multimidia h3 {
+    color: #993661;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.sobre-multimidia video {
+    width: 700px;
+    max-width: 100%;
+    margin: 20px auto 40px;
+    border-radius: 15px;
+    border: 4px solid #70274F;
+}
+
+video {
+    width: 90%;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+/* CARDÁPIO */
+
+#Cardapio {
+    background-color: #F7F8EC;
+}
+
+#Cardapio > p {
+    margin-bottom: 40px;
+}
+
+/* CATEGORIAS */
+
+.categoria {
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 8px solid #98AD42;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.categoria > h3 {
+    color: #70274F;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* PRODUTOS */
+
+.produto {
+    background-color: #FFF7E5;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    border-left: 5px solid #F7A80A;
+}
+
+.produto h4 {
+    color: #993661;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.produto ul {
+    padding-left: 25px;
+}
+
+.produto li {
+    margin: 5px 0;
+}
+
+/* LISTAS */
+
+.lista-opcoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;
+}
+
+.lista-opcoes li {
+    background-color: #AABE65;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.lista-opcoes li:hover {
+    background-color: #98AD42;
+}
+
+/* BEBIDAS */
+
+.lista-bebidas {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.lista-bebidas li {
+    background-color: #F7A80A;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* LISTA DE DEFINIÇÃO */
+
+.categoria dl {
+    text-align: left;
+}
+
+.categoria dt {
+    color: #70274F;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.categoria dd {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* REDES SOCIAIS */
+
+#Redes {
+    background-color: #70274F;
+    color: #FFFFFF;
+}
+
+#Redes h2 {
+    color: #FFFFFF;
+}
+
+#Redes p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.botoes-redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* PEDIDO */
+
+#Pedido {
+    background-color: #AABE65;
+    color: #000000;
+}
+
+#Pedido h2 {
+    color: #70274F;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#Pedido > p {
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* FORMULÁRIO */
+
+form {
+    width: 850px;
+    max-width: 100%;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* LABELS */
+
+form > label {
+    display: block;
+    color: #70274F;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+
+form > input[type="text"],
+form > input[type="tel"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 10px;
+    border: 2px solid #D8D8D8;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* QUANDO CLICAR NO CAMPO */
+
+form > input[type="text"]:focus,
+form > input[type="tel"]:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #993661;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(153, 54, 97, 0.12);
+}
+
+/* TÍTULOS DAS OPÇÕES */
+
+form h2 {
+    color: #70274F;
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #AABE65;
+}
+
+/* CHECKBOXES */
+
+.opcoes-checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.opcoes-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.opcoes-checkbox label {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    padding: 12px 15px;
+    margin: 0;
+    background-color: #F7F8EC;
+    border: 2px solid #DDE5B5;
+    border-radius: 12px;
+    color: #70274F;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.opcoes-checkbox label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin-right: 10px;
+    border: 2px solid #98AD42;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    transition: 0.25s;
+}
+
+.opcoes-checkbox label:hover {
+    background-color: #E8EFCB;
+    border-color: #98AD42;
+    transform: translateY(-2px);
+}
+
+.opcoes-checkbox input[type="checkbox"]:checked + label {
+    background-color: #AABE65;
+    border-color: #70274F;
+    color: #70274F;
+}
+
+.opcoes-checkbox input[type="checkbox"]:checked + label::before {
+    background-color: #70274F;
+    border-color: #70274F;
+    box-shadow: inset 0 0 0 3px #AABE65;
+}
+
+/* TEXTAREA */
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* BOTÃO DO FORMULÁRIO */
+
+form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #993661;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #70274F;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #70274F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    color: #F7A80A;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 20px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 12px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #AABE65;
+}
+
+#copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* TABELA DE PREÇOS */
+
+#Tabela {
+    background-color: #F7F8EC;
+}
+
+#Tabela h2 {
+    color: #70274F;
+    margin-bottom: 30px;
+}
+
+#Tabela table {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#Tabela th {
+    background-color: #70274F;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #FFFFFF;
+}
+
+#Tabela td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #D9D9D9;
+    font-size: 15px;
+}
+
+#Tabela td:first-child {
+    text-align: left;
+    color: #70274F;
+    font-weight: 700;
+}
+
+#Tabela tbody tr:hover {
+    background-color: #AABE65;
+    transition: 0.3s;
+}
+
+#Tabela td:not(:first-child) {
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    form {
+        padding: 25px 20px;
+    }
+
+    .opcoes-checkbox {
+        grid-template-columns: 1fr;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+
+    #Tabela {
+        padding: 60px 10px;
+    }
+
+    #Tabela table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    #Tabela th,
+    #Tabela td {
+        padding: 10px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        height: 150px;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        padding-right: 120px;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    .logo {
+        width: 95px;
+        right: 15px;
+        top: 25px;
+    }
+
+    #Home {
+        padding-top: 200px;
+    }
+
+    #Home h1 {
+        font-size: 40px;
+    }
+
+    #Home h2 {
+        font-size: 21px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .categoria {
+        padding: 20px;
+    }
+
+    .lista-opcoes,
+    .lista-bebidas {
+        grid-template-columns: 1fr;
+    }
+
+    .botoes-redes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botoes-redes button {
+        width: 250px;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 10px;
+    }
+}
